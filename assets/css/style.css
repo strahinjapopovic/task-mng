@@ -91,12 +91,6 @@ header p:first-child {
   background-color: lightslategrey;
 }
 
-/*
-.card-body{
-  background-color: var(--gray);
-}
-*/
-
 form#formGroup {
   margin: 0 auto;
 }
@@ -122,7 +116,13 @@ div.form-group:nth-child(3) {
 }
 
 button#add-btn {
-  border: 2px solid var(--gray);
+  width: 10vw;
+  height: 4vw;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: var(--gray-dark);
+  border: 2px solid var(--naval-blue);
+  background-color: var(--gray);
 }
 
 button#add-btn:hover {
@@ -160,20 +160,21 @@ button#submit:active {
 #error-title, #error-date, #error-desc {
   font-size: large;
   font-weight: bold;
-  font-style: italic;
   color: rgb(255, 0, 0);
 }
 
 #container {
-  height: 50vw;
+  height: 100vw;
 }
 
 div#task-div-0, 
 div#task-div-1, 
-div#task-div-2 {
+div#task-div-2,
+div#task-div-3,
+div#task-div-4,
+div#task-div-5 {
   
   width: 15vw;
-  height: 100%;
   z-index: 999;
   height: auto;
   display: none;
@@ -188,10 +189,12 @@ div#task-div-2 {
 
 table#task-tbl-0, 
 table#task-tbl-1, 
-table#task-tbl-2 {
+table#task-tbl-2,
+table#task-tbl-3,
+table#task-tbl-4,
+table#task-tbl-5 {
   width: 90%;
   margin: 1vw auto;
-  visibility: hidden;
   border-collapse: separate;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -201,7 +204,10 @@ table#task-tbl-2 {
 
 table#task-tbl-0 tr td, 
 table#task-tbl-1 tr td, 
-table#task-tbl-2 tr td {
+table#task-tbl-2 tr td,
+table#task-tbl-3 tr td,
+table#task-tbl-4 tr td,
+table#task-tbl-5 tr td {
   width: 100%;
   font-size: large;
   font-weight: bold;
@@ -213,13 +219,19 @@ table#task-tbl-2 tr td {
 
 table#task-tbl-0 tr td span, 
 table#task-tbl-1 tr td span, 
-table#task-tbl-2 tr td span {
+table#task-tbl-2 tr td span,
+table#task-tbl-3 tr td span,
+table#task-tbl-4 tr td span,
+table#task-tbl-5 tr td span {
   color: green;
 }
 
 table#task-tbl-0 tr td#title-0, 
 table#task-tbl-1 tr td#title-1, 
-table#task-tbl-2 tr td#title-2 {
+table#task-tbl-2 tr td#title-2,
+table#task-tbl-3 tr td#title-3,
+table#task-tbl-4 tr td#title-4,
+table#task-tbl-5 tr td#title-5 {
   color:aqua;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -234,13 +246,25 @@ table#task-tbl-1 tr td#desc-1,
 table#task-tbl-1 tr td#delete-1, 
 table#task-tbl-2 tr td#date-2, 
 table#task-tbl-2 tr td#desc-2, 
-table#task-tbl-2 tr td#delete-2 {
+table#task-tbl-2 tr td#delete-2,
+table#task-tbl-3 tr td#date-3, 
+table#task-tbl-3 tr td#desc-3, 
+table#task-tbl-3 tr td#delete-3,
+table#task-tbl-4 tr td#date-4, 
+table#task-tbl-4 tr td#desc-4, 
+table#task-tbl-4 tr td#delete-4,
+table#task-tbl-5 tr td#date-5, 
+table#task-tbl-5 tr td#desc-5, 
+table#task-tbl-5 tr td#delete-5 {
   background-color:rgb(192,192,192);
 }
 
 table#task-tbl-0 tr td#desc-0, 
 table#task-tbl-1 tr td#desc-1, 
-table#task-tbl-2 tr td#desc-2 {
+table#task-tbl-2 tr td#desc-2,
+table#task-tbl-3 tr td#desc-3,
+table#task-tbl-4 tr td#desc-4,
+table#task-tbl-5 tr td#desc-5 {
   color: var(--naval-blue);
 }
 
@@ -252,24 +276,51 @@ table#task-tbl-1 tr td#date-1,
 table#task-tbl-1 tr td#desc-1, 
 table#task-tbl-2 tr td#title-2, 
 table#task-tbl-2 tr td#date-2, 
-table#task-tbl-2 tr td#desc-2 {
+table#task-tbl-2 tr td#desc-2,
+table#task-tbl-3 tr td#title-3, 
+table#task-tbl-3 tr td#date-3, 
+table#task-tbl-3 tr td#desc-3,
+table#task-tbl-4 tr td#title-4, 
+table#task-tbl-4 tr td#date-4, 
+table#task-tbl-4 tr td#desc-4,
+table#task-tbl-5 tr td#title-5, 
+table#task-tbl-5 tr td#date-5, 
+table#task-tbl-5 tr td#desc-5 {
   font-size: x-large;
   border-bottom: 1px solid 	rgb(105,105,105);
 }
 
 button#del-0, 
 button#del-1, 
-button#del-2 {
+button#del-2,
+button#del-3,
+button#del-4,
+button#del-5 {
   width: 4vw;
   height: 2vw;
   color: white;
   font-size: 20px;
   line-height: 1.5;
   margin-top: 0.5vw;
-  border-radius: 3px;
-  visibility: hidden;
+  border-radius: 5px;
   margin-bottom: 0.5vw;
   border: 2px solid red;
   font-family: "Roboto", sans-serif;
   background-color: var(--gray-dark);
+}
+
+div#helper-error {
+  height: auto;
+  line-height: 1.5;
+  background-color: var(--gray-dark);
+}
+
+div#helper-error p {
+  text-align: left;
+  padding-left: 10px;
+  font-size: x-large;
+  font-weight: bolder;
+  white-space: pre-line;
+  color: var(--light-web-blue);
+  
 }

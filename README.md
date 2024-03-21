@@ -53,6 +53,14 @@ Marge the ***(main)*** branch with ***(feature/display-card)*** feature branch a
 
 [<img src="./assets/README-screenshots/testing-kanban-page1.PNG" width="1000" alt="GitHab screenshot." />](./assets/README-screenshots/testing-kanban-page1.PNG)
 
+*Display up to 6 cards at once...*
+
+[<img src="./assets/README-screenshots/testing-kanban-page-6cards.PNG" width="1000" alt="GitHab screenshot." />](./assets/README-screenshots/testing-kanban-page-6cards.PNG)
+
+*If inserting more then 6 cards at once error message appears as follows...*
+
+[<img src="./assets/README-screenshots/testing-kanban-page-more-then-6cards-error.PNG" width="1000" alt="GitHab screenshot." />](./assets/README-screenshots/testing-kanban-page-more-then-6cards-error.PNG)
+
 Repository over GitHub account you can find [GitHub Repos][1] and application deployment at [GitHub Pages][2].
 
 [1]: https://strahinjapopovic.github.io/task-mng/           "GitHub Repos"
