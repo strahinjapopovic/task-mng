@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+/* =============================================================
+ 	First Name			: 	Strahinja     					    
+ 	Last Name			: 	Popovic					            
+ 	Developer Name      : 	CodexDeveloper			        
+ 	WebMaster Email		:	spope.mails@gmail.com               
+ ============================================================== */
+
+/* ***************************************************************************************** */
+/* Definition of the css stylingn variables ************************************************ */
+/* ***************************************************************************************** */
+
+:root {
+  --dark: black;
+  --light: white; 
+  --gray: rgb(240, 240, 240);
+  --gray-dark: rgb(23,23,23);
+  --electron-blue: rgb(8,129,209);
+  --naval-blue: rgba(1,33,55,1.00);
+  --light-web-blue: rgb(12, 209, 235);
+}
+
+body {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(9, 148, 148);
+}
+
+p {
+  margin: 2px 0 2px 0;
+}
+
+header p {
+  color: aqua;
+  font-size: 40px;
+}
+
+header p:first-child {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.swim-lanes {
+  min-height: 60vh;
+}
+
+.task-card {
+  margin: 0 auto;
+}
+
+.task-card:hover {
+  cursor: grab;
+}
+
+.modal-content {
+  border: 2px solid var(--gray);
+}
+
+.modal-header, .modal-footer {
+  background-color: var(--gray-dark);
+}
+
+.close {
+  width: 35px;
+  height: 35px;
+  line-height: 1.2;
+  color: var(--gray-dark);
+  background-color: var(--gray);
+}
+
+.modal-title {
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--light-web-blue);
+}
+
+#to-do, #in-progress, #done {
+  border: 2px solid var(--gray);
+}
+
+#done {
+  background-color: lightslategrey;
+}
+
+#in-progress {
+  background-color: lightslategrey;
+}
+
+#to-do {
+  background-color: lightslategrey;
+}
+
+/*
+.card-body{
+  background-color: var(--gray);
+}
+*/
+
+form#formGroup {
+  margin: 0 auto;
+}
+
+.modal-body, .form-group {
+  color: black;
+  background-color: var(--gray);
+}
+
+div.form-group:nth-child(1), div.form-group:nth-child(2) {
+  width: 50%;
+  margin-bottom: 10px;
+  border: 0px solid var(--gray-dark);
+}
+
+div.form-group:nth-child(2) {
+  border-left: none;
+}
+
+div.form-group:nth-child(3) {
+  width: 100%;
+  border: 0px solid var(--gray-dark);
+}
+
+button#add-btn {
+  border: 2px solid var(--gray);
+}
+
+button#add-btn:hover {
+  border: 2px solid var(--electron-blue);
+}
+
+button#add-btn:active {
+  border: 2px solid var(--electron-blue);
+}
+
+button.btn-secondary, button#submit {
+  font-size: large;
+  font-weight: bolder;
+  color: var(--gray-dark);
+  background: var(--light-web-blue);
+}
+
+button.btn-secondary:hover {
+  background-color: var(--electron-blue);
+}
+
+button#submit:focus {
+  outline: none;
+}
+
+button#submit:hover {
+  background-color: var(--electron-blue);
+}
+
+button#submit:active {
+  border: none;
+  background-color: var(--electron-blue);
+}
+
+#error-title, #error-date, #error-desc {
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(255, 0, 0);
+}
+
+#container {
+  height: 50vw;
+}
+
+div#task-div-0, 
+div#task-div-1, 
+div#task-div-2 {
+  
+  width: 15vw;
+  height: 100%;
+  z-index: 999;
+  height: auto;
+  display: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  position: relative;
+  background-color: var(--gray);
+  border: 2px solid var(--gray-dark);
+  margin-left: calc((100% - 15vw) / 2);
+}
+
+table#task-tbl-0, 
+table#task-tbl-1, 
+table#task-tbl-2 {
+  width: 90%;
+  margin: 1vw auto;
+  visibility: hidden;
+  border-collapse: separate;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--gray);
+  border: 1px solid var(--gray-dark);
+}
+
+table#task-tbl-0 tr td, 
+table#task-tbl-1 tr td, 
+table#task-tbl-2 tr td {
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  color: var(--gray-dark);
+  background-color: var(--gray);
+  font-family: "Roboto", sans-serif;
+}
+
+table#task-tbl-0 tr td span, 
+table#task-tbl-1 tr td span, 
+table#task-tbl-2 tr td span {
+  color: green;
+}
+
+table#task-tbl-0 tr td#title-0, 
+table#task-tbl-1 tr td#title-1, 
+table#task-tbl-2 tr td#title-2 {
+  color:aqua;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--gray-dark);
+}
+
+table#task-tbl-0 tr td#date-0, 
+table#task-tbl-0 tr td#desc-0, 
+table#task-tbl-0 tr td#delete-0,
+table#task-tbl-1 tr td#date-1, 
+table#task-tbl-1 tr td#desc-1, 
+table#task-tbl-1 tr td#delete-1, 
+table#task-tbl-2 tr td#date-2, 
+table#task-tbl-2 tr td#desc-2, 
+table#task-tbl-2 tr td#delete-2 {
+  background-color:rgb(192,192,192);
+}
+
+table#task-tbl-0 tr td#desc-0, 
+table#task-tbl-1 tr td#desc-1, 
+table#task-tbl-2 tr td#desc-2 {
+  color: var(--naval-blue);
+}
+
+table#task-tbl-0 tr td#title-0, 
+table#task-tbl-0 tr td#date-0, 
+table#task-tbl-0 tr td#desc-0, 
+table#task-tbl-1 tr td#title-1, 
+table#task-tbl-1 tr td#date-1, 
+table#task-tbl-1 tr td#desc-1, 
+table#task-tbl-2 tr td#title-2, 
+table#task-tbl-2 tr td#date-2, 
+table#task-tbl-2 tr td#desc-2 {
+  font-size: x-large;
+  border-bottom: 1px solid 	rgb(105,105,105);
+}
+
+button#del-0, 
+button#del-1, 
+button#del-2 {
+  width: 4vw;
+  height: 2vw;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 0.5vw;
+  border-radius: 3px;
+  visibility: hidden;
+  margin-bottom: 0.5vw;
+  border: 2px solid red;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--gray-dark);
+}
