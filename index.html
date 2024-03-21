@@ -29,8 +29,7 @@
   </header>
   <div class="container">
     <div class="text-center mb-5">
-      <button id="add-btn" class="btn btn-success bg-dark" data-bs-toggle="modal" data-bs-target="#formModal">ADD -
-        TASK</button>
+      <button id="add-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
     </div>
     <!-- Todo: Create a modal with a form to add tasks -->
 
@@ -146,6 +145,61 @@
                 </table>
               </div>
               <!-- END DRAGABLE DIV-2 ************************** -->
+              <!-- DRAGABLE DIV-3 ************************** -->
+              <div id="task-div-3" draggable="true">
+                <table id="task-tbl-3">
+                  <tr>
+                    <td id="title-3"></td>
+                  </tr>
+                  <tr>
+                    <td id="date-3">Due: </td>
+                  </tr>
+                  <tr>
+                    <td id="desc-3"></td>
+                  </tr>
+                  <tr>
+                    <td id="delete-3"><button type="button" id="del-3">Delete</button></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- END DRAGABLE DIV-3 ************************** -->
+              <!-- DRAGABLE DIV-4 ************************** -->
+              <div id="task-div-4" draggable="true">
+                <table id="task-tbl-4">
+                  <tr>
+                    <td id="title-4"></td>
+                  </tr>
+                  <tr>
+                    <td id="date-4">Due: </td>
+                  </tr>
+                  <tr>
+                    <td id="desc-4"></td>
+                  </tr>
+                  <tr>
+                    <td id="delete-4"><button type="button" id="del-4">Delete</button></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- END DRAGABLE DIV-4 ************************** -->
+              <!-- DRAGABLE DIV-5 ************************** -->
+              <div id="task-div-5" draggable="true">
+                <table id="task-tbl-5">
+                  <tr>
+                    <td id="title-5"></td>
+                  </tr>
+                  <tr>
+                    <td id="date-5">Due: </td>
+                  </tr>
+                  <tr>
+                    <td id="desc-5"></td>
+                  </tr>
+                  <tr>
+                    <td id="delete-5"><button type="button" id="del-5">Delete</button></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- END DRAGABLE DIV-5 ************************** -->
+            <div id="helper-error"></div>
             </div>
           </div>
         </div>
@@ -177,7 +231,7 @@
               <tr>
                 <td style="width: 80%">
                   <h2 class="card-title mb-1"
-                    style="color: aqua; text-align: left; border-bottom: 2px solid aqua; padding-bottom: 3px;">Completed
+                    style="color: aqua; text-align: left; border-bottom: 2px solid aqua; padding-bottom: 3px;">Done
                   </h2>
                 </td>
                 <td style="width: 20%;"><img src="./assets/images/done.png" width="30px" style="float: right;" />
